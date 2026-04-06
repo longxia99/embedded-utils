@@ -1,0 +1,40 @@
+# Build outputs
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.srec
+
+# Build directories
+build/
+dist/
+Debug/
+Release/
+cmake-build-*/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Compilers
+*.d
+*.dep
+*.depend
+
+# Debug
+*.log
+*.dbg
+
+# Temporary files
+*.tmp
+*.bak
