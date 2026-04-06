@@ -37,7 +37,7 @@
 | **i2c_dev** | I2C 设备通用驱动框架 | ✅ | [示例](examples/demo_stm32/i2c_eeprom_demo.c) |
 | **spi_dev** | SPI 设备通用驱动框架 | ✅ | [示例](examples/demo_stm32/spi_flash_demo.c) |
 | **uart_dev** | UART 环形缓冲收发 | ✅ | [示例](examples/demo_stm32/uart_printf_demo.c) |
-| **gpio_dev** | GPIO 抽象层 | 🔄 Coming soon |
+| **gpio_dev** | GPIO 抽象层 | ✅ | [示例](examples/demo_stm32/gpio_led_demo.c) |
 
 ### 阶段 3：OS 抽象 (os/) 🚧
 
