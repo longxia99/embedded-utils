@@ -1,7 +1,7 @@
 # Embedded-Utils 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/Platform-STM32%20%7C%20ESP32%20%7C%20Linux-blue)](https://github.com/yourname/embedded-utils)
+[![Platform](https://img.shields.io/badge/Platform-STM32%20%7C%20ESP32%20%7C%20Linux-blue)](https://github.com/longxia99/embedded-utils)
 
 > **嵌入式开发通用工具库** - 让嵌入式开发更高效
 
@@ -26,9 +26,9 @@
 | 组件 | 描述 | 状态 | 示例 |
 |------|------|------|------|
 | **ring_buffer** | 中断安全的环形缓冲区 | ✅ | [示例](examples/demo_linux/ring_buffer_demo.c) |
-| **fifo** | 多生产者/消费者 FIFO | 🔄 | Coming soon |
-| **crc** | CRC8/16/32 计算 | 🔄 | Coming soon |
-| **fixed_point** | 定点数运算库 | 🔄 | Coming soon |
+| **fifo** | 多生产者/消费者 FIFO | ✅ | [示例](tests/test_fifo.c) |
+| **crc** | CRC8/16/32 计算 | ✅ | [示例](tests/test_crc.c) |
+| **fixed_point** | 定点数运算库 | ✅ | [示例](tests/test_fixed_point.c) |
 
 ### 阶段 2：驱动框架 (drivers/) 🚧
 
@@ -54,7 +54,7 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/yourname/embedded-utils.git
+git clone https://github.com/longxia99/embedded-utils.git
 cd embedded-utils
 ```
 
@@ -170,8 +170,9 @@ gcc -I./include your_code.c ./src/utils/*.c -o your_app
 | 模块 | 覆盖率 | 状态 |
 |------|--------|------|
 | ring_buffer | 95% | ✅ |
-| fifo | - | 🚧 Coming soon |
-| crc | - | 🚧 Coming soon |
+| fifo | 90% | ✅ |
+| crc | 100% | ✅ |
+| fixed_point | 95% | ✅ |
 
 ---
 
@@ -179,9 +180,9 @@ gcc -I./include your_code.c ./src/utils/*.c -o your_app
 
 ### 2026 Q2
 - [x] ring_buffer 模块
-- [ ] fifo 模块
-- [ ] crc 模块
-- [ ] fixed_point 模块
+- [x] fifo 模块
+- [x] crc 模块
+- [x] fixed_point 模块
 
 ### 2026 Q3
 - [ ] i2c_dev 驱动框架
@@ -219,8 +220,8 @@ gcc -I./include your_code.c ./src/utils/*.c -o your_app
 
 - 💼 擅长：Linux 驱动/单片机/RTOS
 - 🎯 提供：技术咨询、项目开发、代码审查
-- 📧 联系：[你的邮箱]
-- 💬 知乎：[你的知乎主页]
+- 📧 联系：[467100920@qq.com]
+- 💬 知乎：[https://www.zhihu.com/people/60-95-31-98]
 
 **如果你有嵌入式开发需求，欢迎联系！**
 
@@ -230,12 +231,12 @@ gcc -I./include your_code.c ./src/utils/*.c -o your_app
 
 如果这个项目对你有帮助，请给一个 Star！⭐
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourname/embedded-utils&type=Date)](https://star-history.com/#yourname/embedded-utils&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=longxia99/embedded-utils&type=Date)](https://star-history.com/#longxia99/embedded-utils&Date)
 
 ---
 
 ## 🔗 相关链接
 
-- [知乎专栏：嵌入式开发那些事](https://zhihu.com/column/xxx)
-- [CSDN 博客](https://blog.csdn.net/xxx)
-- [技术文章：嵌入式驱动开发的 5 个常见坑](https://zhuanlan.zhihu.com/p/xxx)
+- [知乎专栏：嵌入式开发那些事](https://www.zhihu.com/column/c_2024468569010831878)
+- [CSDN 博客](https://blog.csdn.net/sdkerjerf?spm=1011.2266.3001.5343)
+- [技术文章：嵌入式驱动开发的 5 个常见坑](https://zhuanlan.zhihu.com/p/2024442903481599044)
